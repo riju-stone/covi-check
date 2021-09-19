@@ -50,7 +50,7 @@ html, body{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    /*text-align: center;*/ 
     margin-right: 20px;
 }
 
@@ -67,26 +67,41 @@ html, body{
     display: flex;
     flex-direction: column;
     overflow-y:scroll;
-    scrollbar-base-color: cadetblue;
-    scrollbar-color: white;
+}
+
+#form-inputs::-webkit-scrollbar {
+    width: 16px;
+}
+ 
+#form-inputs::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+ 
+#form-inputs::-webkit-scrollbar-thumb {
+    background-color: #1c5c47;
+    border-radius: 100px;
 }
 
 #input{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;*/
     margin-top: 10px;
+    margin-left: 25px;
 }
 
 #form-label{
     font-size: 1.3rem;
     font-weight: 600;
     color: aliceblue;
+    width: 100%;
 }
 
 #checkbox{
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
+    margin-right: 70px;
 }
 
 #submit{
@@ -115,7 +130,7 @@ html, body{
 
 #app-pred{
     height: 100%;
-    background-color: aqua;
+    background-color: rgb(128, 29, 148);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -183,3 +198,4 @@ html, body{
         border-radius: 0px 0px 10px 10px;
     }
 }
+
