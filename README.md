@@ -1,4 +1,4 @@
-#CoviCheck
+##CoviCheck
 A simple model to predict whether an individual is COVID-19 infected or not, given certain health parameters!
 
 ## Inspiration
