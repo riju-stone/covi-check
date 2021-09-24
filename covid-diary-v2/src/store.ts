@@ -1,7 +1,9 @@
-const store = () : number => {
-	const n  = 0;
-	return n;
-    
-};
+import { configureStore } from "@reduxjs/toolkit";
 
-export default store;
+//Actions
+
+//Reducers
+
+//Store Configuration
+
+//Dispatch Logic
