@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: AquaFont;
+    src: url('fonts/aqua.ttf');
+}
+
+html,
+body{
+    font-family: AquaFont;
+}
