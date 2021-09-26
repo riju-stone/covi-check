@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Landing() {
+export default function Dashboard() {
     return (
-        <div className="landing-container">
+        <div className="dashboard-container">
             Main Section
         </div>
     )

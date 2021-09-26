@@ -1,5 +1,17 @@
+:root{
+  --pale-blue: #8ed3e8;
+  --deep-blue: #1b91bf;
+  --pale-pink: #ffa3d6;
+  --pale-gray: #6b739b;
+  --pale-yellow: #f2b263;
+  --pale-orange: #ffc7c7;
+  --deep-orange: #f26d3d;
+  --pale-purple: #bd89ca;
+  --deep-purple: #5751BF;
+}
+
 .App {
-  background-color: #24A9C0;
+  background-color: var(--pale-orange);
   text-align: center;
   height: 100%;
   width: 100%;
@@ -8,8 +20,8 @@
 }
 
 .sidebar-container{
-  background-color: #24A9C0;
-  width: 80px;
+  background-color: var(--pale-orange);
+  width: 20vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -18,23 +30,36 @@
   align-items: center;
 }
 
-.sidebar-container > * {
-  color: aliceblue;
-  margin-bottom: 10px;
+.sidebar-element {
+  color: var(--deep-blue);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.landing-container{
+.icon{
+  height: 30px;
+  width: 30px;
+}
+
+.sidebar-element > span{
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.dashboard-container{
   z-index: 5;
-  box-shadow: 10px 0px 20px #04404b;
-  background-color: aquamarine;
-  width: calc(100vw - 80px);
+  background-color: var(--pale-blue);
+  width: 80vw;
   border-radius: 15px 0px 0px 15px;
   display: grid;
   text-align: center;
   align-items: center;
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 666px) {
   .App {
     text-align: center;
     height: 100%;
@@ -44,26 +69,41 @@
   }
 
   .sidebar-container{
-    background-color: #24A9C0;
     width: 100%;
-    height: 80px;
+    height: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
 
-  .sidebar-container > * {
-    margin-right: 10px;
+  .sidebar-element > span{
+    font-size: 0.8rem;
+    margin-left: 0;
   }
 
-  .landing-container{
+  .dashboard-container{
     z-index: 5;
-    box-shadow: 10px 0px 20px #04404b;
-    background-color: aquamarine;
     width: 100vw;
-    height: calc(100vh - 80px);
+    height: 80vh;
     border-radius: 10px;
     border-radius: 15px 15px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  .sidebar-container > .sidebar-element {
+    color: var(--deep-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .sidebar-element > span{
+    margin-top: 20px;
+    margin-left: 0;
+    text-align: center;
   }
 }
